@@ -1,0 +1,16 @@
+# Compila um programa simples em C 
+compile:
+	gcc exemplo.c -o exemplo
+
+# Target com dois comandos Linux: listar arquivos e mostrar data
+sistema:
+	ls -lh
+	date
+
+# Compila o VVC 
+vtm_build:
+	cd build && cmake .. && make
+
+# Roda uma das buscas do passo 2
+buscar:
+	grep -rl "encodeBinEP" .
